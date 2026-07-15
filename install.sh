@@ -47,10 +47,9 @@ read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
     sudo cp 42-wallpapers.xml /usr/share/gnome-background-properties;
-    rm 42-wallpapers.xml
     echo "Installed."
-else
-    continue
-fi
     rm 42-wallpapers.xml
-    echo "bye ! :D"
+else
+    rm 42-wallpapers.xml
+fi
+echo "bye ! :D"
